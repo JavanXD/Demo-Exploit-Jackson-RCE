@@ -1,0 +1,11 @@
+<h1>Upload File</h1>
+<div class="form-group">
+  <label for="file-upload">File input</label>
+  <input type="file" #file (change)="onFilesAdded()" class="form-control-file" id="file-upload" />
+</div>
+<div class="example-button-row">
+  <button mat-raised-button (click)="addFiles()">Add File</button>
+  <button mat-raised-button color="primary" (click)="uploadFile()"
+          [matBadge]="uploaded" matBadgePosition="after" matBadgeColor="accent">Upload</button>
+  <button mat-raised-button (click)="reset()">Reset</button>
+</div>
