@@ -1,0 +1,47 @@
+*   text=auto
+
+#
+# The above will handle all files NOT found below
+#
+# These files are text and should be normalized (Convert crlf => lf)
+*.css text
+*.scss text
+*.df text
+*.htm text diff=html
+*.html text diff=html
+*.java text
+*.js text
+*.json text
+*.xml text
+*.yml text
+*.properties text
+*.sql text
+*.md text
+*.ts text
+*.sh text eol=lf
+
+
+## DOCKER
+*.dockerignore text
+Dockerfile text
+
+
+## CONFIGS
+*.bowerrc text
+*.cnf text
+*.conf text
+*.config text
+.babelrc text
+.browserslistrc text
+.editorconfig text
+.env text
+.gitattributes text
+.gitconfig text
+.htaccess text
+*.lock text
+*.npmignore text
+*.yaml text
+*.yml text
+browserslist text
+Makefile text
+makefile text
